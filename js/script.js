@@ -15,18 +15,15 @@ const root = new Vue({
         welcomeMessage: 'May the force be with you',
         fromUser: '',
         classColor: 'black',
+
     },
     methods: {
         greet() {
-            alert(this.welcomeMessage);
+            this.fromUser = this.welcomeMessage;
         },
 
         colorToggle() {
-            if (this.classColor === 'default-color') {
-                this.classColor = 'black'
-            } else {
-                this.classColor = 'default-color'
-            }
+            this.classColor === 'default-color' ? this.classColor = 'black' : this.classColor = 'default-color';
         }
 
     },
