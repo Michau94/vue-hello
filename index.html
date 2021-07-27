@@ -25,6 +25,11 @@
                         <!-- PRINT INFO PROM VUE -->
                         <h1>{{ message }} {{ name }}</h1>
 
+                        <!-- input from user -->
+                        <div class="p-3">
+
+                            <input type="text" v-model="name" placeholder="type your name">
+                        </div>
 
 
                         <!-- PRINT IMAGE FROM VUE DATA -->
@@ -47,12 +52,6 @@
                             <button @click="greet">Push me!</button>
                         </div>
 
-                        <!-- input from user -->
-                        <div class="p-3">
-
-                            <input type="text" v-model="fromUser">
-                            <p>What I'm writing here: {{fromUser}}</p>
-                        </div>
 
                     </div>
                 </div>

@@ -7,7 +7,7 @@ Vue.config.devtools = true;
 const root = new Vue({
     el: "#root",
     data: {
-        name: 'Michau',
+        name: '',
         message: 'Hello',
         lastName: 'Wado',
         imageName: 'Yoda',
