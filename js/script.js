@@ -10,13 +10,23 @@ const root = new Vue({
         name: 'Michau',
         message: 'Hello',
         lastName: 'Wado',
-        image: 'https://w7.pngwing.com/pngs/287/356/png-transparent-yoda-darth-maul-star-wars-jedi-star-wars-background-star-wars-master-yoda-illustration-star-wars-episode-vii-fictional-character-wookieepedia-thumbnail.png',
+        imageName: 'Yoda',
+        image: './img/yoda.png', //volevo inserire png ma non trovavo l'immagine hostata online trasparente
         welcomeMessage: 'May the force be with you',
         fromUser: '',
+        classColor: 'black',
     },
     methods: {
         greet() {
             alert(this.welcomeMessage);
+        },
+
+        colorToggle() {
+            if (this.classColor === 'default-color') {
+                this.classColor = 'black'
+            } else {
+                this.classColor = 'default-color'
+            }
         }
 
     },
